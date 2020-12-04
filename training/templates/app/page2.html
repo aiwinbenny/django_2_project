@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>haii</h1>
+    {% if table %}
+      <ol>
+        {% for i in table%}
+        <li>User info</li>
+          <ul>
+            <li>{{i.first_name}}</li>
+            <li>{{i.last_name}}</li>
+            <li>{{i.email}}</li>
+          </ul>
+          {% endfor %}
+      </ol>
+      {% else %}
+        error
+      {% endif %}
+  </body>
+</html>
