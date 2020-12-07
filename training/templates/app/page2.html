@@ -6,7 +6,7 @@
     <title></title>
   </head>
   <body>
-    <h1>haii</h1>
+    <!-- <h1>haii</h1>
     {% if table %}
       <ol>
         {% for i in table%}
@@ -20,6 +20,19 @@
       </ol>
       {% else %}
         error
-      {% endif %}
+      {% endif %} -->
+
+      <form  method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" name="" value="save">
+
+      </form>
+
+
+
+
+
+
   </body>
 </html>
